@@ -20,6 +20,7 @@ function mostrar() {
 	let contCataratas = 0;
 	let contSalta = 0;
 
+	let flagMayor = 0;
 	let mayorCantidad;
 	let sexoMayorCant;
 
@@ -45,7 +46,7 @@ function mostrar() {
 
 		do {
 
-			temporada = prompt("Ingrese destino (minusculas): bariloche - cataratas - salta");
+			temporada = prompt("Ingrese temporada (minusculas): otoño - invierno - primavera - verano");
 
 		}
 		while (!(temporada == "otoño" || temporada == "invierno" || temporada == "primavera" || temporada == "verano"));
@@ -56,10 +57,46 @@ function mostrar() {
 
 		}
 		while ((cantidad <= 0));
+
+
+		switch (lugar){
+
+			case "bariloche":
+				contBariloche++;
+				break;
+			case "cataratas":
+				contCataratas++;
+				break;
+			case "salta":
+				contSalta++;
+				break;
+		}
+
+		if (temporada == "invierno"){
+
+			acumInvierno += cantidad;
+		}
+
+		if (flagMayor == 0 || cantidad > mayorCantidad){
+
+
+			mayorCantidad = cantidad;
+			sexoMayorCant = sexo;
+			flagMayor = 1;
+
+		}
+
+
+
+
+
+
 		respuesta = prompt("¿Agregar otra estadía?");
 	}
-	
+
 	while (respuesta == "si");
+
+
 
 
 

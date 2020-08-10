@@ -90,6 +90,10 @@ c)la marca del más barato de los sólidos
     console.log("Marca del producto sólido más barato: " + marcaMenor + " precio: " + menorSolido);
   }
 
+  else {
+
+  }
+console.log("No se registraron productos sólidos");
 
 
 }
