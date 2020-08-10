@@ -22,7 +22,7 @@ function mostrar() {
 	let nombreMayor;
 	let flagPeso = 0;
 
-	for (let i = 0; i < 3; i++) {
+	for (let i = 0; i < 5; i++) {
 
 		do {
 			nombre = prompt("Ingrese nombre");
@@ -64,16 +64,11 @@ function mostrar() {
 
 		}
 
-		promedioEdad = acumuladorEdad / 3;
+		promedioEdad = acumuladorEdad / 5;
 
 		console.log ("Cantidad de mujeres: " + contadorF);
 		console.log ("Edad promedio: " + promedioEdad);
 		console.log ("Hombre mas pesado: " +nombreMayor+ " Peso: "+ mayorPesoM);
-
-
-		
-
-		
 
 	}
 
