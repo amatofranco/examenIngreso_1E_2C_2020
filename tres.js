@@ -107,16 +107,23 @@ function mostrar() {
 		mayorLugar = "Bariloche";
 	}
 
-	else {
+	else if (contCataratas > contBariloche && contCataratas > contSalta) {
 
 		mayorLugar = "Cataratas";
 
+	}
+
+	else {
+
+		mayorLugar = lugar;
 	}
 
 	if (contInvierno != 0) {
 
 		promedioInvierno = acumInvierno / contInvierno;
 	}
+
+
 
 	console.log ("Lugar más elegido: " + mayorLugar);
 	console.log ("Sexo del titular que lleva más pasajeros: " + sexoMayorCant + " Cantidad: " + mayorCantidad);
