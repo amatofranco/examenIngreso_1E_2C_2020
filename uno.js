@@ -49,7 +49,7 @@ function mostrar() {
 		}
 		while (!(edad >= 1 && edad <= 120));
 
-		if(sexo=="f"){
+		if (sexo == "f") {
 			contadorF++;
 		}
 
@@ -62,17 +62,17 @@ function mostrar() {
 
 		acumuladorEdad += edad;
 
-		}
-
-		promedioEdad = acumuladorEdad / 5;
-
-		console.log ("Cantidad de mujeres: " + contadorF);
-		console.log ("Edad promedio: " + promedioEdad);
-
-		if (flagPeso !=0){
-		console.log ("Hombre mas pesado: " +nombreMayor+ " Peso: "+ mayorPesoM + " kg");
-		}
-		else ("No se registraron hombres");
-	
 	}
 
+	promedioEdad = acumuladorEdad / 5;
+
+	console.log("Cantidad de mujeres: " + contadorF);
+	console.log("Edad promedio: " + promedioEdad);
+
+	if (flagPeso != 0) {
+		console.log("Hombre mas pesado: " + nombreMayor + " Peso: " + mayorPesoM + " kg");
+	}
+	else {
+		("No se registraron hombres");
+	}
+}
