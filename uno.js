@@ -68,7 +68,11 @@ function mostrar() {
 
 		console.log ("Cantidad de mujeres: " + contadorF);
 		console.log ("Edad promedio: " + promedioEdad);
-		console.log ("Hombre mas pesado: " +nombreMayor+ " Peso: "+ mayorPesoM + " kg");
 
+		if (flagPeso !=0){
+		console.log ("Hombre mas pesado: " +nombreMayor+ " Peso: "+ mayorPesoM + " kg");
+		}
+		else ("No se registraron hombres");
+	
 	}
 
