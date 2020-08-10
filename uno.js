@@ -31,10 +31,10 @@ function mostrar() {
 
 		do {
 
-			peso = parseInt(prompt("Ingrese peso en kg"));
+			peso = parseInt(prompt("Ingrese peso en kg (1-600)"));
 
 		}
-		while (!(peso >= 1 && peso <= 1000));
+		while (!(peso >= 1 && peso <= 600));
 
 		do {
 			sexo = prompt("Ingrese sexo: m - f");
