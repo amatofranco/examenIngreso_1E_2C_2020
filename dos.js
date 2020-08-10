@@ -92,8 +92,10 @@ c)la marca del más barato de los sólidos
 
   else {
 
-  }
-console.log("No se registraron productos sólidos");
+  console.log("No se registraron productos sólidos");
+
+
+}
 
 
 }

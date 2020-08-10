@@ -25,6 +25,8 @@ function mostrar() {
 	let sexoMayorCant;
 
 	let acumInvierno = 0;
+	let contInvierno = 0;
+	let promedioInvierno = 0;
 
 	let respuesta;
 
@@ -74,6 +76,7 @@ function mostrar() {
 
 		if (temporada == "invierno"){
 
+			contInvierno ++;
 			acumInvierno += cantidad;
 		}
 
@@ -86,11 +89,6 @@ function mostrar() {
 
 		}
 
-
-
-
-
-
 		respuesta = prompt("¿Agregar otra estadía?");
 	}
 
@@ -98,8 +96,30 @@ function mostrar() {
 
 
 
+	if (contSalta > contBariloche && contSalta > contCataratas){
 
+		mayorLugar = "Salta";
 
+	}
 
+	else if (contBariloche > contSalta && contBariloche > contCataratas){
+
+		mayorLugar = "Bariloche";
+	}
+
+	else {
+
+		mayorLugar = "Cataratas";
+
+	}
+
+	if (contInvierno != 0) {
+
+		promedioInvierno = acumInvierno / contInvierno;
+	}
+
+	console.log ("Lugar más elegido: " + mayorLugar);
+	console.log ("Sexo del titular que lleva más pasajeros: " + sexoMayorCant + " Cantidad: " + mayorCantidad);
+	console.log ("Promedio de personas por viaje en invierno: " + promedioInvierno);
 
 }
