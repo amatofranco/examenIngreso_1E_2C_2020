@@ -68,7 +68,7 @@ function mostrar() {
 
 		console.log ("Cantidad de mujeres: " + contadorF);
 		console.log ("Edad promedio: " + promedioEdad);
-		console.log ("Hombre mas pesado: " +nombreMayor+ " Peso: "+ mayorPesoM);
+		console.log ("Hombre mas pesado: " +nombreMayor+ " Peso: "+ mayorPesoM + " kg");
 
 	}
 
