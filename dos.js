@@ -27,34 +27,34 @@ c)la marca del más barato de los sólidos
   do {
 
 
-		do {
-			marca = prompt("Ingrese marca");
-		}
+    do {
+      marca = prompt("Ingrese marca");
+    }
     while (!(isNaN(marca)));
-    
+
     do {
 
       precio = parseFloat(prompt("Ingrese precio"));
     }
 
-    while (precio<=0);
+    while (precio <= 0);
 
-		do {
+    do {
 
-			peso = parseInt(prompt("Ingrese peso en kg"));
+      peso = parseInt(prompt("Ingrese peso en kg"));
 
-		}
-		while (!(peso >= 1 && peso <= 1000));
+    }
+    while (!(peso >= 1 && peso <= 1000));
 
-		do {
-			tipo = prompt("Ingrese tipo: solido - liquido");
+    do {
+      tipo = prompt("Ingrese tipo: solido - liquido");
 
-		}
+    }
     while (!(tipo == "solido" || tipo == "liquido"));
-    
+
     acumuladorPeso += peso;
 
-    if (tipo=="liquido" && flagLiquido ==0 || precio > mayorLiquido){
+    if (tipo == "liquido" && flagLiquido == 0 || precio > mayorLiquido) {
 
       mayorLiquido = precio;
       marcaMayor = marca;
@@ -62,7 +62,7 @@ c)la marca del más barato de los sólidos
 
     }
 
-    if (tipo=="solido" && flagSolido == 0 || precio < menorSolido){
+    if (tipo == "solido" && flagSolido == 0 || precio < menorSolido) {
 
       menorSolido = precio;
       marcaMenor = marca;
@@ -77,9 +77,9 @@ c)la marca del más barato de los sólidos
 
   console.log("Peso total de la compra: " + acumuladorPeso + " kg");
 
-  if (flagLiquido != 0){
+  if (flagLiquido != 0) {
 
-    console.log ("Marca del producto líquido mas caro: "+ marcaMayor + " precio: " + mayorLiquido);
+    console.log("Marca del producto líquido mas caro: " + marcaMayor + " precio: " + mayorLiquido);
   }
 
   else {
@@ -87,7 +87,7 @@ c)la marca del más barato de los sólidos
   }
 
   if (flagSolido != 0) {
-    console.log ("Marca del producto sólido más barato: " + marcaMenor + " precio: " + menorSolido);
+    console.log("Marca del producto sólido más barato: " + marcaMenor + " precio: " + menorSolido);
   }
 
 
