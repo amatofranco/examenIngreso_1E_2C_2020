@@ -107,15 +107,10 @@ function mostrar() {
 		mayorLugar = "Bariloche";
 	}
 
-	else if (contCataratas > contBariloche && contCataratas > contSalta) {
+	else {
 
 		mayorLugar = "Cataratas";
 
-	}
-
-	else {
-
-		mayorLugar = lugar;
 	}
 
 	if (contInvierno != 0) {
